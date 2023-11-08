@@ -1,8 +1,7 @@
-/*
- *
- *
- *
- *
+/* Program created by David Melanson to complete problem set posed in 
+ * Amer Qouneh's CPE 422 Homework 7, Problem 3.
+ * Cout statements from this program and bankAccount class functions 
+ * detail what happens at each step.
  *
  */
 
