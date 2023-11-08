@@ -9,7 +9,7 @@
 
 int main() {
 	cout << "Running bank account app" << endl;
-	BankAccount jackAccount(string("Jack Smith"), float(50.0));
+	BankAccount jackAccount("Jack Smith", 50.0);
 	BankAccount jillAccount("Jill Brian", 100.0);
 	BankAccount bankArray[3] = {
 		BankAccount("Ralph Kramden", 10.0),
@@ -18,11 +18,15 @@ int main() {
 	};
 
 	//Part d
+	jackAccount.deposit(30.0);
+	jillAccount.deposit(30.0);
 	for(int i = 0; i < 3; i++) {
 		bankArray[i].deposit(30.0);
 	}
 
 	//Part e
+	jackAccount.withdraw(20.0);
+	jillAccount.withdraw(20.0);
 	for(int i = 0; i < 3; i++) {
 		bankArray[i].withdraw(20.0);
 	}
@@ -37,3 +41,4 @@ int main() {
 	cout << "Finished running bank account app" << endl;
 	return 0;
 }
+
